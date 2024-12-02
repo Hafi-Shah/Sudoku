@@ -1,0 +1,69 @@
+.sudoku-container {
+  margin: 20px auto;
+  max-width: 600px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.sudoku-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+  gap: 5px;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.sudoku-grid input {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.sudoku-grid input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.result {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto 12px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+span {
+  color: #007bff;
+  font-size: 1em;
+}
+
+.valid {
+  color: blue;
+}
+
+.invalid {
+  color: red;
+}
