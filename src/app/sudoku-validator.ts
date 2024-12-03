@@ -10,8 +10,6 @@ export class SudokuValidator {
   }
 
   private isValidSet(numbers: number[]): boolean {
-    if (numbers && numbers.includes(0)) return false;
-
     const uniqueNumbers = new Set(numbers);
     for (let i = 1; i <= this.size; i++) {
       if (!uniqueNumbers.has(i)) return false;

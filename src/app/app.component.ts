@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 import { SudokuValidator } from './sudoku-validator';
 import { CommonModule } from '@angular/common';
